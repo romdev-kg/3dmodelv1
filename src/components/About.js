@@ -3,7 +3,7 @@ import Header from './Header';
 
 export const About = () => (
     <>
-  <div className="container mx-auto p-4 mt-1 " >
+  <div className="container mx-auto p-4 mt-1 text-center" >
     <h1 className="text-3xl font-bold mb-4">About Us</h1>
     <p className="mb-4">
       We are a company specializing in 3D modeling and visualization. 
