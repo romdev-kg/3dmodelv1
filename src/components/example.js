@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { ErrorBoundary } from 'react-error-boundary';
 import { Contact } from './contact';
+import SubscriptionPlans from './SubscriptionPlans';
 
 const Model = lazy(() => import('./ui/Model')); // Предполагается, что Model теперь в отдельном файле
 
@@ -17,8 +18,6 @@ function Fallback({ error }) {
 
 function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
-  const [selectedSize, setSelectedSize] = useState('XXL');
-  const [isGiftWrapped, setIsGiftWrapped] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   const product = {
@@ -42,8 +41,8 @@ function ProductDetail() {
 
   return (
     <>
-    <h2 className='text-center mt-16'> For example</h2>
-    <div className="flex flex-col justify-center  lg:flex-row gap-8 p-6 bg#14293A">
+    <h2 className='text-center mt-16'>An example of a product display shown below</h2>
+    <div className="flex flex-col justify-center m-12 rounded-3xl border-2 border-white lg:flex-row gap-8 p-6 bg-[#14293A]">
       
       <div className="lg:w-1/3">
         <div className="relative flex justify-start rounded-xl overflow-hidden shadow-lg h-[480px]">
@@ -84,9 +83,9 @@ function ProductDetail() {
           ))}
         </div>
       </div>
-      <div className="lg:w-1/2 space-y-6">
-        <h1 className="text-4xl font-bold text-white-800">{product.name}</h1>
-        <p className="text-3xl font-semibold text-red-600">{product.price} ₽</p>
+      <div className="lg:w-1/2 space-y-6  content-center">
+        <h1 className="text-4xl text-center font-bold text-white-800">{product.name}</h1>
+        <p className="text-3xl text-center font-semibold text-red-600">{product.price} ₽</p>
         {/* <div>
           <p className="font-semibold text-lg mb-2 text-gray-700">Размер</p>
           <div className="flex gap-2">
@@ -139,6 +138,7 @@ function ProductDetail() {
         <p className="text-white-700 leading-relaxed">{product.description}</p>
       </div>
     </div>
+    <SubscriptionPlans/>
     <Contact/>
     </>
   );
