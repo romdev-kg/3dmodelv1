@@ -16,9 +16,9 @@ export const About = () => (
 
 export const Contact = () => (
   <div className="container mx-auto p-4 text-center" id='contact'>
-    <h1 className="text-3xl font-bold mb-4">Контакты</h1>
+    <h1 className="text-3xl font-bold mb-4">Contacts</h1>
     <p className="mb-2">Email: romdevv@gmail.com</p>
-    <p className="mb-2">Телефон: +996 998 555 990</p>
-    <p className="mb-2">Адрес: Ahunbaeva 125/2</p>
+    <p className="mb-2">Phone: +996 998 555 990</p>
+    <p className="mb-2">Addres: Ahunbaeva 125/2</p>
   </div>
 );

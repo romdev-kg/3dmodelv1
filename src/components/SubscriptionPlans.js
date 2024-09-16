@@ -20,8 +20,8 @@ const PlanCard = ({ title, limit, price, isSpecial, color }) => (
 export default function SubscriptionPlans() {
   return (
     <div className="bg#14293A py-16 px-6 min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold text-white mb-2">Monetization</h1>
-      <p className="text-xl text-gray-400 mb-12">Choose your subscription plan</p>
+      <h1 className="text-4xl font-bold text-white mb-2">Choose your subscription plan</h1>
+      <p className="text-xl text-gray-400 mb-12"></p>
       <div className="flex flex-col sm:flex-row gap-8 w-full max-w-5xl justify-center">
         <PlanCard
           title="Standard"

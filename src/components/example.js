@@ -131,9 +131,7 @@ function ProductDetail() {
             <ShoppingCart size={24} />
             Купить
           </button>
-          <button className="p-3 border rounded-lg hover:bg-gray-100 transition-colors">
-            <Heart size={24} className="text-gray-500" />
-          </button>
+
         </div>
         <p className="text-white-700 leading-relaxed">{product.description}</p>
       </div>

@@ -43,7 +43,7 @@ function Hero() {
         </rect>
       </svg>
       <div className="hero-content">
-        <h1>Your vision - our 3D innovation</h1>
+        <h1>Your vision - our 3D AI innovation</h1>
       </div>
     </section>
     <Features/>
